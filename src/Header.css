@@ -1,13 +1,15 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #051040;
   color: #dddcdc;
   padding: 1rem;
   margin-bottom: 20px;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
 }
-
 nav ul {
   display: flex;
   list-style: none;
@@ -44,16 +46,17 @@ nav li a {
 
 .header-details li {
   margin-right: 1rem;
-  box-shadow: 2px 2px 12px #051040;
 }
 
 .header-details a {
   color: #051040;
   background-color: #dddcdc;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 3px;
   text-decoration: none;
   font-weight: bold;
+  transition: transform 500ms;
+  transition: .5s ease;
 }
 
 .header-details a:hover {

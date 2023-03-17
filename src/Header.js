@@ -13,8 +13,6 @@ const Header = () => {
         </ul>
       </nav>
       <div className="header-details">
-        <h1>Cameron Millen</h1>
-        <h2>Full-Stack Application Developer</h2>
         <ul>
           <li><a href='https://goo.gl/maps/P7a7UhE47pvPLAdm9'>Yelm, WA</a></li>
           <li><a href='tel:206-578-6741'>206-578-6741</a></li>
