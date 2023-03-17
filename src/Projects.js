@@ -56,7 +56,7 @@ const Projects = () => {
                         </a>
                     </div>
                     <div className="project-description">
-                        <a href="">
+                        <a href="https://semi-addicting-games.netlify.app/">
                             <img
                                 className="project-img"
                                 src="../assets/instafame.jpg"
