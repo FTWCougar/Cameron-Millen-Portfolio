@@ -10,14 +10,26 @@
 }
 
 .about-container#visible {
-    opacity: 1;
-    transform: translate(1, 1);
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 .about-body {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+#img{
+    border-radius: 20px;
+}
+
+.about-main {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 .about-body h1 {
@@ -41,21 +53,57 @@
     padding: 10px;
     border-radius: 3px;
     margin-left: 20px;
-    animation: fadeIn 3s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 .about-skills {
     display: flex;
     flex-direction: row;
     width: 20%;
+}
+
+.img-skills {
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.about-main:nth-child(1) {
+    animation-delay: .2s;
+}
+.about-main:nth-child(2) {
+    animation-delay: .8s;
+}
+.img-skills:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.img-skills:nth-child(2) {
+    animation-delay: 1.4s;
+}
+
+.img-skills:nth-child(3) {
+    animation-delay: 1.8s;
+}
+
+.img-skills:nth-child(4) {
+    animation-delay: 2.2s;
+}
+
+.img-skills:nth-child(5) {
+    animation-delay: 2.6s;
+}
+.img-skills:nth-child(6) {
+    animation-delay: 3s;
 }

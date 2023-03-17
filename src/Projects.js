@@ -59,7 +59,7 @@ const Projects = () => {
                         <a href="">
                             <img
                                 className="project-img"
-                                src=""
+                                src="../assets/instafame.jpg"
                                 alt="InstaFame"
                             />
                         </a>
