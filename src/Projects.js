@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Projects.css";
+import { useIsVisible } from "./useIsVisible";
 
 const Projects = () => {
+  const ref = useRef();
+  const isVisible = useIsVisible(ref);
     return (
-        <div id="Projects" className="projects-container">
+      <div id="Projects" >
+        <div ref={ref} id={isVisible ? "visible" : ""} className="projects-container">
             <h2>Technical Projects</h2>
             <ul>
                 <li>
@@ -20,10 +24,10 @@ const Projects = () => {
                     <iframe display="flex" justify-content="center" width="95%" height="350" src="https://www.youtube.com/embed/8BW_wOaSTm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <div className="project-description">
-                        <p>
+                        <h3>
                             A web page inspired by dev.to coded in React and
                             Ruby
-                        </p>
+                        </h3>
                         <p>
                             Built a personal blog website using Ruby on Rails
                             for the backend, JavaScript and React for the
@@ -59,10 +63,10 @@ const Projects = () => {
                                 alt="InstaFame"
                             />
                         </a>
-                        <p>
+                        <h3>
                             A web page inspired by instagram coded in React and
                             Ruby
-                        </p>
+                        </h3>
                         <p>
                             Developed a single page image sharing application
                             that allows users to upload and comment on images.
@@ -100,10 +104,10 @@ const Projects = () => {
                                 alt="Semi-Addicting Games"
                             />
                         </a>
-                        <p>
+                        <h3>
                             A Web Page using React that allows users to play tic
                             tac toe and hangman
-                        </p>
+                        </h3>
                         <p>
                             Built a single page game application using React and
                             a basic JSON backend.
@@ -126,6 +130,7 @@ const Projects = () => {
                 </li>
             </ul>
         </div>
+      </div>
     );
 };
 

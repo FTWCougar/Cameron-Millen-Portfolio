@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./About.css";
+import { useIsVisible } from "./useIsVisible";
 
 const About = () => {
+  const ref = useRef();
+  const isVisible = useIsVisible(ref);
     return (
-        <div id="Home" className="about-container">
+        <div ref={ref} id={isVisible ? "visible" : ""} className="about-container">
             <h2>About Me</h2>
             <div className="about-body">
                 <div>
@@ -19,7 +22,15 @@ const About = () => {
                         developers who can work well in a team and manage
                         projects effectively.
                     </p>
-                    <div>Skills</div>
+                    <h2>Skills</h2>
+                    <div className="about-skills">
+                      <img src="../assets/javascript.png" alt="Javascript"/>
+                      <img src="../assets/react.png" alt="React"/>
+                      <img src="../assets/html.png" alt="Html"/>
+                      <img src="../assets/css.png" alt="CSS"/>
+                      <img src="../assets/ruby.png" alt="Ruby"/>
+                      <img src="../assets/rails.png" alt="Rails"/>
+                    </div>
                 </div>
                 <img src="../assets/Cameron-Millen.jpg" alt="Cameron Millen" />
             </div>

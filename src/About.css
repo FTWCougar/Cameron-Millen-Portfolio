@@ -3,14 +3,25 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 3px;
+    height: 100vh;
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 2.5s;
+}
+
+.about-container#visible {
+    opacity: 1;
+    transform: translate(1, 1);
 }
 
 .about-body {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.about-body h1 {
+    font-size: 3rem;
 }
 
 .about-container h2 {
@@ -30,6 +41,21 @@
     padding: 10px;
     border-radius: 3px;
     margin-left: 20px;
-    transition: transform 500ms;
-    transition: .5s ease;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
 }

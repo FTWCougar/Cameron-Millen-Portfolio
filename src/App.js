@@ -6,8 +6,8 @@ import About from './About';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
+    <div id="Home" className="App">
+      <Header />
       <main>
         <About/>
         <Projects/>

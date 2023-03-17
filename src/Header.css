@@ -4,8 +4,6 @@ header {
   align-items: center;
   background-color: #051040;
   color: #dddcdc;
-  padding: 1rem;
-  margin-bottom: 20px;
   z-index: 1;
   position: fixed;
   width: 100%;
