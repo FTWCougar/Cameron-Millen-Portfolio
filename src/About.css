@@ -4,15 +4,8 @@
     margin: 0 auto;
     margin-bottom: 20px;
     height: 100vh;
-    opacity: 0;
     transform: translate(0, 10vh);
     transition: all 2.5s;
-}
-
-.about-container#visible {
-    animation-name: fade-in;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
 }
 
 .about-body {
@@ -58,7 +51,9 @@
 .about-skills {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     width: 20%;
+    margin: auto;
 }
 
 .img-skills {
@@ -106,4 +101,8 @@
 }
 .img-skills:nth-child(6) {
     animation-delay: 3s;
+}
+
+.img-skills#rails{
+    width: 100%;
 }

@@ -21,7 +21,7 @@ const Projects = () => {
                         </a>
                     </div>
                     <div className="project-video">
-                    <iframe display="flex" justify-content="center" width="95%" height="350" src="https://www.youtube.com/embed/8BW_wOaSTm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe display="flex" justify-content="center" width="95%" height="350" src="https://www.youtube.com/embed/8BW_wOaSTm8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                     <div className="project-description">
                         <h3>

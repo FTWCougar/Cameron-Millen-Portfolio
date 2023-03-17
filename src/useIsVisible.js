@@ -16,3 +16,5 @@ export function useIsVisible(ref) {
   
     return isIntersecting;
   }
+
+  
