@@ -2,8 +2,8 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #051040;
-  color: #dddcdc;
+  background-color: #003366;
+  color: #F5F5F5;
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -19,7 +19,7 @@ nav li {
 }
 
 nav li a {
-  color: #dddcdc;
+  color: #F5F5F5;
   text-decoration: none;
 }
 
@@ -47,8 +47,8 @@ nav li a {
 }
 
 .header-details a {
-  color: #051040;
-  background-color: #dddcdc;
+  color: #003366;
+  background-color: #F5F5F5;
   padding: 0.5rem 1rem;
   border-radius: 3px;
   text-decoration: none;
@@ -58,6 +58,6 @@ nav li a {
 }
 
 .header-details a:hover {
-  background-color: #051040;
-  color: #dddcdc;
+  background-color: #003366;
+  color: #F5F5F5;
 }

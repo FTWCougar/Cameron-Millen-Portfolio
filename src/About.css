@@ -3,7 +3,7 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 20px;
-    height: 100vh;
+    height: 80vh;
     transform: translate(0, 10vh);
     transition: all 2.5s;
 }
@@ -14,7 +14,12 @@
     align-items: center;
 }
 
-#img{
+.about-school {
+    font-weight: bold;
+    color: #ffa500;
+}
+
+#img {
     border-radius: 20px;
 }
 
@@ -23,6 +28,7 @@
     animation-name: fade-in;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    color: #003366;
 }
 
 .about-body h1 {
@@ -32,7 +38,7 @@
 .about-container h2 {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .about-container p {
@@ -45,22 +51,24 @@
     width: 45%;
     padding: 10px;
     border-radius: 3px;
-    margin-left: 20px;
 }
 
 .about-skills {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     width: 20%;
     margin: auto;
 }
-
+.about-skills a {
+    display: inline-block; /* Ensure the anchor tags occupy the necessary space */
+  }
 .img-skills {
     opacity: 0;
     animation-name: fade-in;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    object-fit: contain;
 }
 
 @keyframes fade-in {
@@ -77,9 +85,11 @@
 .about-main:nth-child(1) {
     animation-delay: .2s;
 }
+
 .about-main:nth-child(2) {
     animation-delay: .8s;
 }
+
 .img-skills:nth-child(1) {
     animation-delay: 1s;
 }
@@ -99,10 +109,12 @@
 .img-skills:nth-child(5) {
     animation-delay: 2.6s;
 }
+
 .img-skills:nth-child(6) {
     animation-delay: 3s;
+
 }
 
-.img-skills#rails{
-    width: 100%;
+.img-skills:nth-child(7) {
+    animation-delay: 3.4s;
 }

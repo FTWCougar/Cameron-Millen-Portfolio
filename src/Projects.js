@@ -1,17 +1,27 @@
-import React, { useRef } from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
-import { useIsVisible } from "./useIsVisible";
 
 const Projects = () => {
-    const ref = useRef();
-    const isVisible = useIsVisible(ref);
+    useEffect(() => {
+        const projectsContainer = document.querySelector(".projects-container");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        });
+
+        observer.observe(projectsContainer);
+
+        return () => {
+            observer.unobserve(projectsContainer);
+        };
+    }, []);
     return (
         <div id="Projects">
-            <div
-                ref={ref}
-                id={isVisible ? "visible" : ""}
-                className="projects-container"
-            >
+            <div className="projects-container">
                 <h2>Technical Projects</h2>
                 <ul>
                     <li>
@@ -116,7 +126,11 @@ const Projects = () => {
                             </a>
                         </div>
                         <div className="project-description">
-                            <a href="https://semi-addicting-games.netlify.app/">
+                            <a
+                                href="https://semi-addicting-games.netlify.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <img
                                     className="project-img"
                                     src="../assets/Semi-Addicting-Games.png"
