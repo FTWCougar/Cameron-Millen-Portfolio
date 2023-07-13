@@ -21,11 +21,11 @@ const Projects = () => {
     }, []);
     return (
         <div id="Projects">
-            <div className="projects-container">
+            <div class="projects-container">
                 <h2>Technical Projects</h2>
                 <ul>
                     <li>
-                        <div className="project-title">
+                        <div class="project-title">
                             <a
                                 href="https://github.com/FTWCougar/YouBlog"
                                 target="_blank"
@@ -34,7 +34,7 @@ const Projects = () => {
                                 YouBlog
                             </a>
                         </div>
-                        <div className="project-video">
+                        <div class="project-video">
                             <iframe
                                 display="flex"
                                 justify-content="center"
@@ -46,7 +46,7 @@ const Projects = () => {
                                 allowFullScreen
                             ></iframe>
                         </div>
-                        <div className="project-description">
+                        <div class="project-description">
                             <h3>
                                 A web page inspired by dev.to coded in React and
                                 Ruby
@@ -69,7 +69,7 @@ const Projects = () => {
                         </div>
                     </li>
                     <li>
-                        <div className="project-title">
+                        <div class="project-title">
                             <a
                                 href="https://github.com/FTWCougar/InstaFame"
                                 target="_blank"
@@ -78,7 +78,7 @@ const Projects = () => {
                                 InstaFame
                             </a>
                         </div>
-                        <div className="project-video">
+                        <div class="project-video">
                             <iframe
                                 width="831"
                                 height="467"
@@ -88,7 +88,7 @@ const Projects = () => {
                                 allowFullScreen
                             ></iframe>
                         </div>
-                        <div className="project-description">
+                        <div class="project-description">
                             <h3>
                                 A web page inspired by instagram coded in React
                                 and Ruby
@@ -116,7 +116,7 @@ const Projects = () => {
                         </div>
                     </li>
                     <li>
-                        <div className="project-title">
+                        <div class="project-title">
                             <a
                                 href="https://github.com/FTWCougar/semi-addicting-games"
                                 target="_blank"
@@ -125,14 +125,14 @@ const Projects = () => {
                                 Semi-Addicting Games
                             </a>
                         </div>
-                        <div className="project-description">
+                        <div class="project-description">
                             <a
                                 href="https://semi-addicting-games.netlify.app/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <img
-                                    className="project-img"
+                                    class="project-img"
                                     src="../assets/Semi-Addicting-Games.png"
                                     alt="Semi-Addicting Games"
                                 />

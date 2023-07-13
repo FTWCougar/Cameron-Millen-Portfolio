@@ -12,15 +12,15 @@ const Header = () => {
                     <li>
                         <a href="#Projects">Projects</a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="#Experience">Experience</a>
                     </li>
                     <li>
                         <a href="#Educatiom">Education</a>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
-            <div className="header-details">
+            <div class="header-details">
                 <ul>
                     <li>
                         <a

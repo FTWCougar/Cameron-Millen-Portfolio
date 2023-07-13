@@ -15,11 +15,11 @@ const About = () => {
     });
 
     return (
-        <div className="about-container">
-            <div className="about-body">
+        <div class="about-container">
+            <div class="about-body">
                 <div>
-                    <div name="about-main" className="about-main">
-                        <h1>
+                    <div name="about-main" class="about-main">
+                        <h1 class="threeD">
                             Cameron Millen <br />A Software Developer
                         </h1>
                         <p>
@@ -27,7 +27,7 @@ const About = () => {
                             at{" "}
                             <a
                                 href="https://flatironschool.com/"
-                                className="about-school"
+                                class="about-school"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -41,43 +41,53 @@ const About = () => {
                             be valuable for companies that are looking for
                             Full-stack developers who can work well in a team
                             and manage projects effectively.
+                            <br />
+                            <br />
+                            Throughout my life I have been influenced by many
+                            people in the field. I've really enjoyed getting to
+                            follow my dad in his work and even take software
+                            classes throughout my middle school and high school
+                            years. I guess what made me lean into software was
+                            my family most of them are in the software field so
+                            I get to learn a lot from them. They have challenged
+                            me and thats what I like about it.
                         </p>
                         <h2>Skills</h2>
                     </div>
-                    <div className="about-skills">
+                    <div class="about-skills">
                         <img
-                            className="img-skills"
+                            class="img-skills"
                             src="../assets/javascript.png"
                             alt="Javascript"
                         />
                         <img
-                            className="img-skills"
-                            src="../assets/typescript.png"
-                            alt="Typescript"
-                        />
-                        <img
-                            className="img-skills"
-                            src="../assets/react.png"
-                            alt="React"
-                        />
-                        <img
-                            className="img-skills"
+                            class="img-skills"
                             src="../assets/html.png"
                             alt="Html"
                         />
                         <img
-                            className="img-skills"
+                            class="img-skills"
                             src="../assets/css.png"
                             alt="CSS"
                         />
                         <img
-                            className="img-skills"
+                            class="img-skills"
+                            src="../assets/react.png"
+                            alt="React"
+                        />
+                        <img
+                            class="img-skills"
+                            src="../assets/typescript.png"
+                            alt="Typescript"
+                        />
+                        <img
+                            class="img-skills"
                             src="../assets/ruby.png"
                             alt="Ruby"
                         />
                         <img
                             id="rails"
-                            className="img-skills"
+                            class="img-skills"
                             src="../assets/rails.png"
                             alt="Rails"
                         />
@@ -86,7 +96,7 @@ const About = () => {
                 <img
                     name="about-main"
                     id="img"
-                    className="about-main"
+                    class="about-main"
                     src="../assets/Cameron-Millen.jpg"
                     alt="Cameron Millen"
                 />

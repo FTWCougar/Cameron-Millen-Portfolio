@@ -118,3 +118,9 @@
 .img-skills:nth-child(7) {
     animation-delay: 3.4s;
 }
+
+.threeD {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
